@@ -1,0 +1,20 @@
+extends layout/main-layout.pug
+block styles
+    link(rel="stylesheet", href="/css/product.css")
+block content
+    main
+        if prods.length > 0
+            .grid
+                each product in prods
+                    .article.card.product-item
+                        header.card-header
+                            h1.product-title #{product.title}
+                        div.card-image
+                            img(src="https://dreamy-lamport-9435b6.netlify.app/images/01.jpg")
+                        div.card_content
+                            h2.product_price $19.99
+                            p.product_description A very interesting book to explore new knowledge and information
+                        .card_actions
+                            button.btn Add to Cart
+        else
+            h1 No Products
