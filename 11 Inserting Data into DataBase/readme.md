@@ -1,8 +1,8 @@
-**After downloading this folder run this command
+##After downloading this folder run this command
 
 `npm install`
 
-**Be sure that you have configured MySQL DataBase
+##Be sure that you have configured MySQL DataBase
 
 host: 'localhost',
 user: 'root',
